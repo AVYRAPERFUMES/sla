@@ -127,9 +127,10 @@ h1 {
 }
 
 .hero-product {
+  width: 100%;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 40px;
-  background: radial-gradient(circle at 50% 20%, #83b6ed, #224277 55%, #0f223f 80%);
   border: 2px solid rgba(201, 171, 95, 0.3);
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
 }
@@ -167,23 +168,9 @@ h1 {
 .product-image {
   width: 100%;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 26px;
-}
-
-.fire {
-  background: linear-gradient(35deg, #49210b, #dba63e 40%, #713210);
-}
-
-.rose {
-  background: linear-gradient(35deg, #53324d, #e8a3b8 45%, #a44f69);
-}
-
-.sea {
-  background: linear-gradient(35deg, #14253c, #64b5f6 45%, #1f4e7d);
-}
-
-.night {
-  background: linear-gradient(35deg, #0a1024, #4160d8 45%, #111930);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .newsletter {
