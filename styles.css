@@ -1,131 +1,126 @@
-@@ -37.70 +37.65 @@ h3 {
-  espaçamento entre letras : 0,03em ;
+body{
+background:#0b2242;
+color:white;
+font-family:Montserrat, sans-serif;
+margin:0;
+padding:40px;
 }
 
-.marca {
-  cor : var (--dourado);
-  tamanho da fonte : 1,7rem ;
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
 }
 
-.menu {
-  exibição : flexível;
-  espaçamento : 8px ;
-  alinhar-itens : centro;
+.brand{
+color:#d4af37;
+font-weight:700;
+font-size:20px;
 }
 
-botão {
-  cursor : ponteiro;
-  borda : nenhuma;
-  raio-da-borda : 999px ;
-  transição : 0,2s ;
+.menu button{
+background:transparent;
+border:1px solid rgba(255,255,255,0.2);
+color:white;
+padding:8px 14px;
+border-radius:20px;
+cursor:pointer;
+margin-left:10px;
 }
 
-.ghost-btn ,
-.ícone-botão ,
-.botão-secundário ,
-.link-btn ,
-.bag-btn ,
-.fav-btn {
-.bag-btn {
-  cor : var (--branco);
-  fundo : transparente;
-  borda : 1px sólida rgba ( 245 , 246 , 248 , 0.35 );
-  preenchimento : 10px 14px ;
- 
+.hero h1{
+font-size:110px;
+color:#d4af37;
+margin:0;
+line-height:1;
 }
 
-.fav-btn .ativo {
-  fundo : rgba ( 201 , 171 , 95 , 0.22 );
-  cor-da-borda : rgba ( 201 , 171 , 95 , 0.95 );
+.hero-highlight{
+font-size:42px;
+font-weight:700;
+max-width:700px;
 }
 
-.icon-btn {
-  exibição : inline-flex;
-  alinhar-itens : centro;
-  espaço : 7px ;
+.products{
+margin-top:60px;
+display:flex;
+flex-direction:column;
+gap:25px;
 }
 
-.ícone-botão span {
-.icon-btn #cartBtn span {
-  fundo : era (--dourado);
-  cor : #03102b ;
-  peso da fonte : 800 ;
-  raio-da-borda : 999px ;
-  preenchimento : 1px 8px ;
- 
+.product-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#162e54;
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
 }
 
-principal {
-  largura : min ( 1100px , 92vw );
-  margem : 28px auto 60px ;
+.product-card h3{
+color:#d4af37;
+margin:0;
 }
 
-.herói {
-  margem : 80px 0 44px ;
-  
+.product-card p{
+opacity:0.8;
 }
 
-h1 {
-  tamanho-da-fonte : clamp ( 4.5rem , 12vw , 11rem );
-  altura da linha : 0,9 ;
-  margem : 0 ;
-  cor : var (--dourado);
+.product-image{
+width:220px;
+border-radius:16px;
 }
 
-.hero-text-only {
-  largura máxima : 980px ;
-@@ -140,51 +135,52 @@ h1 {
-
-.product-card {
-  exibição : grade;
-  grid-template-columns : 1 fr 320px ;
-  espaço : 20px ;
-  alinhar-itens : centro;
-  fundo : rgba ( 255 , 255 , 255 , 0.04 );
-  borda : 1px sólida rgba ( 201 , 171 , 95 , 0.18 );
-  raio da borda : 28px ;
-  preenchimento : 22px ;
-  margem-inferior : 16px ;
+.actions{
+margin-top:10px;
 }
 
-.product-card h3 {
- 
-  cor : var (--dourado);
-  margem : 0 ;
-  tamanho da fonte : 2rem ;
+.buy-btn{
+background:#d4af37;
+border:none;
+color:#00142c;
+padding:10px 16px;
+border-radius:20px;
+cursor:pointer;
+font-weight:600;
+margin-right:10px;
 }
 
-.preço {
-  tamanho da fonte : 1,75rem ;
-  peso da fonte : 800 ;
+.bag-btn{
+background:transparent;
+border:1px solid rgba(255,255,255,0.3);
+color:white;
+padding:10px 16px;
+border-radius:20px;
+cursor:pointer;
 }
 
-.product-image {
-  largura : 100% ;
-  largura : 300px ;
-  largura-máxima : 100% ;
-  proporção da tela : 1 / 1 ;
-  ajuste-do-objeto : cobertura;
-  raio da borda : 26px ;
-  borda : 1px sólida rgba ( 255 , 255 , 255 , 0.2 );
+.newsletter{
+margin-top:60px;
+background:#0e2a53;
+padding:30px;
+border-radius:18px;
 }
 
-.newsletter {
-  preenchimento : 32px ;
-  fundo : rgba ( 10 , 20 , 45 , 0.8 );
-  raio da borda : 24px ;
-  borda : 1px sólida rgba ( 201 , 171 , 95 , 0.25 );
-  margem superior : 30px ;
+.subscribe-form{
+display:flex;
+gap:10px;
+margin-top:10px;
 }
 
-.subscribe-form {
-  exibição : flexível;
-  flex-wrap : envolver;
-  espaço : 12px ;
-  alinhar-itens : fim;
+.subscribe-form input{
+padding:10px;
+border-radius:10px;
+border:none;
 }
 
-rótulo {
-  exibição : grade;
-  espaçamento : 8px ;
-  largura mínima : 280px ;
+.subscribe-form button{
+background:#d4af37;
+border:none;
+padding:10px 16px;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+}
