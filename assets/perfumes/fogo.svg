@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 900'>
+  <defs><linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#6e350d'/><stop offset='55%' stop-color='#d7962f'/><stop offset='100%' stop-color='#2f1706'/></linearGradient></defs>
+  <rect width='900' height='900' fill='url(#bg)'/>
+  <rect x='280' y='240' width='340' height='450' rx='40' fill='rgba(255,240,220,0.32)' stroke='rgba(255,255,255,0.55)'/>
+  <rect x='305' y='280' width='290' height='380' rx='28' fill='rgba(240,168,62,0.55)'/>
+  <rect x='390' y='170' width='120' height='90' rx='10' fill='#bb8757'/><rect x='405' y='145' width='90' height='35' rx='10' fill='#915b32'/>
+  <rect x='358' y='430' width='184' height='88' fill='rgba(255,255,255,0.8)'/><text x='450' y='484' text-anchor='middle' fill='#6c3a10' font-size='42' font-family='Montserrat, Arial'>FOGO</text>
+</svg>

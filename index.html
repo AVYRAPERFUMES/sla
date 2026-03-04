@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVYRA Perfumes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">AVYRA</div>
+      <nav class="menu" aria-label="Navegação principal">
+        <button class="ghost-btn">Entrar</button>
+        <button class="ghost-btn">Cadastrar</button>
+        <button class="icon-btn" id="favoritesBtn" aria-label="Favoritos">❤</button>
+        <button class="icon-btn" id="cartBtn" aria-label="Sacola">👜 <span id="cartCount">0</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">AVYRA — NÃO É APENAS FRAGRÂNCIA, É LEGADO.</p>
+          <h1>Em Breve</h1>
+          <p class="launch-date">Lançamento oficial em 19 de fevereiro de 2026</p>
+          <div class="hero-actions">
+            <button class="primary-btn">Quero ser avisado(a)</button>
+            <button class="secondary-btn">Ver produtos</button>
+          </div>
+        </div>
+        <img class="hero-product" src="assets/perfumes/hero.svg" alt="Frasco do perfume AVYRA em destaque" />
+      </section>
+
+      <section class="showcase" id="produtos">
+        <h2>Perfumes em destaque</h2>
+
+        <article class="product-card" data-name="FOGO" data-price="59.99">
+          <div>
+            <h3>FOGO (Perfume Dourado)</h3>
+            <p class="price">A partir de R$ 59,99</p>
+            <p>Fragrância marcante com notas quentes e intensidade.</p>
+            <div class="actions">
+              <button class="buy-btn">Comprar agora</button>
+              <button class="bag-btn">Adicionar à sacola</button>
+            </div>
+          </div>
+          <img class="product-image" src="assets/perfumes/fogo.svg" alt="Perfume FOGO da AVYRA" />
+        </article>
+
+        <article class="product-card" data-name="AURA" data-price="59.99">
+          <div>
+            <h3>AURA (Perfume Rosé)</h3>
+            <p class="price">A partir de R$ 59,99</p>
+            <p>Delicado, feminino e com presença suave.</p>
+            <div class="actions">
+              <button class="buy-btn">Comprar agora</button>
+              <button class="bag-btn">Adicionar à sacola</button>
+            </div>
+          </div>
+          <img class="product-image" src="assets/perfumes/aura.svg" alt="Perfume AURA da AVYRA" />
+        </article>
+
+        <article class="product-card" data-name="MARÉ" data-price="51.99">
+          <div>
+            <h3>MARÉ (Azul Tempestade)</h3>
+            <p class="price">A partir de R$ 51,99</p>
+            <p>Movimento, liberdade e frescor intenso.</p>
+            <div class="actions">
+              <button class="buy-btn">Comprar agora</button>
+              <button class="bag-btn">Adicionar à sacola</button>
+            </div>
+          </div>
+          <img class="product-image" src="assets/perfumes/mare.svg" alt="Perfume MARÉ da AVYRA" />
+        </article>
+
+        <article class="product-card" data-name="NOITE" data-price="79.99">
+          <div>
+            <h3>NOITE (Azul Noturno)</h3>
+            <p class="price">A partir de R$ 79,99</p>
+            <p>Elegância, profundidade e mistério.</p>
+            <div class="actions">
+              <button class="buy-btn">Comprar agora</button>
+              <button class="bag-btn">Adicionar à sacola</button>
+            </div>
+          </div>
+          <img class="product-image" src="assets/perfumes/noite.svg" alt="Perfume NOITE da AVYRA" />
+        </article>
+      </section>
+
+      <section class="newsletter">
+        <h2>Receba promoções e novidades</h2>
+        <form class="subscribe-form">
+          <label>
+            E-mail
+            <input type="email" placeholder="seuemail@exemplo.com" required />
+          </label>
+          <button type="submit" class="primary-btn">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Fale conosco</h3>
+        <p>Rua Alegre, 123, Belo Horizonte - MG, Brasil</p>
+        <p>Telefone: (31) 3456-7890</p>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <button class="link-btn">Ouvidoria</button>
+        <button class="link-btn">Ajuda</button>
+        <button class="link-btn">Trocas e devoluções</button>
+      </div>
+      <div>
+        <h3>Redes sociais</h3>
+        <button class="link-btn">Instagram</button>
+        <button class="link-btn">TikTok</button>
+        <button class="link-btn">WhatsApp</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
