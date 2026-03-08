@@ -1,32 +1,41 @@
-const cartCount = document.querySelector('#cartCount');
-const bagButtons = document.querySelectorAll('.bag-btn');
-const buyButtons = document.querySelectorAll('.buy-btn');
-const subscribeForm = document.querySelector('.subscribe-form');
+// Functionality updates for script.js
 
-let total = 0;
+// 1) Open checkout page in new window when buy button is clicked
+function openCheckout() {
+    window.open('checkout.html', '_blank');
+}
 
-bagButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    total += 1;
-    cartCount.textContent = total;
+document.getElementById('buy-button').addEventListener('click', openCheckout);
 
-    const card = event.target.closest('.product-card');
-    const productName = card?.dataset.name ?? 'produto';
-    alert(`${productName} adicionado à sacola!`);
-  });
-});
+// 2) Show items in shopping cart
+function showCart() {
+    const cartItems = getCartItems(); // Assume this function fetches items from the cart
+    console.log('Cart Items:', cartItems);
+    // Display the items in the cart UI
+}
 
-buyButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    const card = event.target.closest('.product-card');
-    const productName = card?.dataset.name ?? 'produto';
-    const productPrice = card?.dataset.price ?? '0,00';
-    alert(`Compra rápida de ${productName} iniciada por R$ ${productPrice}.`);
-  });
-});
+document.getElementById('shopping-cart-button').addEventListener('click', showCart);
 
-subscribeForm?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  alert('Cadastro realizado! Em breve você receberá novidades AVYRA.');
-  subscribeForm.reset();
+// 3) Show saved items (favorites)
+function showFavorites() {
+    const favoriteItems = getFavoriteItems(); // Assume this function fetches favorite items
+    console.log('Favorite Items:', favoriteItems);
+    // Display the items in the favorites UI
+}
+
+document.getElementById('favorites-button').addEventListener('click', showFavorites);
+
+// 4) Send newsletter email to database
+function submitNewsletter() {
+    const email = document.getElementById('newsletter-email').value;
+    fetch('/submit-email', {
+        method: 'POST',
+        body: JSON.stringify({ email }),
+        headers: { 'Content-Type': 'application/json' }
+    });
+}
+
+document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    submitNewsletter();
 });
